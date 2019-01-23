@@ -1,0 +1,86 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "landing-page"
+;
+
+a {
+  color: #f27a00;
+}
+
+a:hover {
+  color: #ffb200;
+}
+
+.title a {
+	color: #333333;
+}
+
+.title a:hover {
+	text-decoration: none;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+
+//    <!-- Temporary navbar container fix -->
+.navbar-toggler {
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}
+
+.btn-mc {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: #f27a00 !important;
+  border-radius: 4px !important;
+  border: none;
+}
+
+.btn-mc:focus, .btn-mc:hover {
+  background-color: #ffb200 !important;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 3em;
+}
+
+
+footer {
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+.links ul {
+  list-style-type: none;
+  padding-left: 0; }
+
+#footer-logo {
+  width: 209px;
+  height: 209px;
+  background: url(/img/footerlogo.png) 0 0;
+
+}
